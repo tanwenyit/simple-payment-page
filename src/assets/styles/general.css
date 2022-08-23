@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+div#root {
+    position: relative;
+    height: 100vh;
+}
+
+.center-card {
+    position: absolute;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.content-padding-15px {
+    padding: 15px
+}
+
+.inline, p.inline {
+    display: inline;
+    height: 50px;
+    margin: 0;
+}
+
+p.center, h3 {
+    text-align: center;
+}
+
+p.alert {
+    color: red;
+    font-weight: bold;
+}
+
+.logo-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-ctn {
+    /* display: inline-block; */
+    width: 50px;
+    height: 50px;
+    background-size: scale;
+    /* background-size: cover; */
+}
+
+h4 {
+    text-align: center;
+    margin: 0;
+}
+
+.message {
+    text-align: center;
+    margin: 0;
+}
+
+.alert-box {
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    background-color: rgb(226, 126, 126);
+    margin-top: 5px;
+    padding: 15px 10px;
+}
+
+.success-box {
+    border: 1px solid green;
+    border-radius: 5px;
+    color: green;
+    background-color: rgb(163, 236, 163);
+    margin-top: 5px;
+    padding: 15px 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .center-card {
+        width: 90%;
+    }
+}
+
